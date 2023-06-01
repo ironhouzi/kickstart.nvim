@@ -204,7 +204,7 @@ vim.o.mouse = 'a'
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
-vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard = ''
 
 -- Enable break indent
 vim.o.breakindent = true
@@ -229,6 +229,9 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
+
+-- Don't switch back to netrw buffer with ctrl-^ (<leader>.)
+vim.g.netrw_altfile = 1
 
 -- [[ Basic Keymaps ]]
 
